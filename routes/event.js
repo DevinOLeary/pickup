@@ -8,6 +8,7 @@ router.post('/', (req, res) => {
     title:req.body.title,
     date:req.body.date,
     time: req.body.time,
+    location: req.body.location,
     category:req.body.category,
     description:req.body.description
   });
