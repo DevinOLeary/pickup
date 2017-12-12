@@ -25,7 +25,7 @@ router.get('/:category', (req,res) => {
     if(!docs){
       res.status(404).send();
     }
-    res.send({docs})
+    res.send(docs)
   }).catch((err) => {
     res.status(400).send(err);
   });
